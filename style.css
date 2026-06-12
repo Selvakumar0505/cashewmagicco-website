@@ -1,0 +1,295 @@
+/* ===== Google Font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fffaf0;
+    color:#333;
+}
+
+
+/* ===== Top Bar ===== */
+
+.top-bar{
+    background:#3b1f00;
+    color:white;
+    padding:12px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.top-bar a{
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:8px 16px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+
+/* ===== Header ===== */
+
+header{
+    background:#5c2c06;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo h1{
+    color:#ffd700;
+    font-size:32px;
+}
+
+.logo span{
+    font-size:14px;
+}
+
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#ffd700;
+}
+
+
+/* ===== Hero Section ===== */
+
+.hero{
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,.5),
+    rgba(0,0,0,.5)),
+    url("dryfruits-banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+}
+
+
+.hero h3{
+    color:#ffd700;
+    font-size:28px;
+}
+
+
+.hero h1{
+    color:white;
+    font-size:70px;
+}
+
+
+.hero p{
+    color:#fff;
+    font-size:22px;
+    margin:15px 0 35px;
+}
+
+
+/* ===== Buttons ===== */
+
+.buttons a{
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:40px;
+    font-weight:bold;
+    margin-right:15px;
+}
+
+
+.shop-btn{
+    background:#ffd700;
+    color:#000;
+}
+
+
+.whatsapp-btn{
+    background:#25D366;
+    color:white;
+}
+
+
+.buttons a:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+
+/* ===== Features ===== */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    padding:60px 8%;
+}
+
+.box{
+    background:white;
+    text-align:center;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px #ccc;
+}
+
+
+/* ===== Products ===== */
+
+#products,
+#combo,
+.reviews,
+#contact{
+    padding:70px 8%;
+    text-align:center;
+}
+
+
+h2{
+    color:#5c2c06;
+    font-size:40px;
+    margin-bottom:35px;
+}
+
+
+.product-area,
+.combo-area,
+.review-area{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+
+.product,
+.combo-box,
+.review-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 20px #ddd;
+    transition:0.4s;
+}
+
+
+.product:hover,
+.combo-box:hover,
+.review-card:hover{
+    transform:translateY(-10px);
+}
+
+
+button{
+    margin-top:15px;
+    background:#5c2c06;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+
+button:hover{
+    background:#ffd700;
+    color:black;
+}
+
+
+/* ===== About ===== */
+
+#about{
+    background:#5c2c06;
+    color:white;
+    padding:80px 8%;
+    text-align:center;
+}
+
+
+#about h2{
+    color:#ffd700;
+}
+
+
+/* ===== Footer ===== */
+
+footer{
+    background:#2d1600;
+    color:white;
+    text-align:center;
+    padding:40px 8%;
+}
+
+
+.footer-links{
+    margin:20px 0;
+}
+
+
+.footer-links a{
+    color:#ffd700;
+    margin:0 15px;
+    text-decoration:none;
+}
+
+
+/* ===== Mobile Responsive ===== */
+
+@media(max-width:768px){
+
+.top-bar,
+header{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+}
+
+nav a{
+    margin:8px;
+    display:inline-block;
+}
+
+
+.hero{
+    height:70vh;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+
+.features,
+.product-area,
+.combo-area,
+.review-area{
+    grid-template-columns:1fr;
+}
+
+h2{
+    font-size:30px;
+}
+
+}
